@@ -1,9 +1,11 @@
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class ReverseArrayTest {
     ReverseArray reverseArray;
 
+    @BeforeEach
     void setUp() {
         reverseArray = new ReverseArray();
     }
@@ -13,7 +15,7 @@ class ReverseArrayTest {
         int[] result = {2, 7, 3, 10};
         int[] expectedResult = {10, 3, 7, 2};
 
-        int[] actualResult = ReverseArray.reverseArray(result);
+        int[] actualResult = reverseArray.reverseArray(result);
 
         Assertions.assertArrayEquals(expectedResult,actualResult);
     }
@@ -23,7 +25,7 @@ class ReverseArrayTest {
         int[] result = null;
         int[] expectedResult = {};
 
-        int[] actualResult = ReverseArray.reverseArray(result);
+        int[] actualResult = reverseArray.reverseArray(result);
 
         Assertions.assertArrayEquals(expectedResult,actualResult);
     }
@@ -33,7 +35,7 @@ class ReverseArrayTest {
         int[] result = {0};
         int[] expectedResult = {0};
 
-        int[] actualResult = ReverseArray.reverseArray(result);
+        int[] actualResult = reverseArray.reverseArray(result);
 
         Assertions.assertArrayEquals(expectedResult,actualResult);
     }
@@ -43,7 +45,7 @@ class ReverseArrayTest {
         int[] result = {};
         int[] expectedResult = {};
 
-        int[] actualResult = ReverseArray.reverseArray(result);
+        int[] actualResult = reverseArray.reverseArray(result);
 
         Assertions.assertArrayEquals(expectedResult,actualResult);
     }
@@ -53,7 +55,7 @@ class ReverseArrayTest {
         int[] result = {-2, -7, -3, -10};
         int[] expectedResult = {-10, -3, -7, -2};
 
-        int[] actualResult = ReverseArray.reverseArray(result);
+        int[] actualResult = reverseArray.reverseArray(result);
 
         Assertions.assertArrayEquals(expectedResult,actualResult);
     }
@@ -63,7 +65,7 @@ class ReverseArrayTest {
         int[] result = {-2, -7, 5, 8, -3, 10};
         int[] expectedResult = {10, -3, 8, 5, -7, -2};
 
-        int[] actualResult = ReverseArray.reverseArray(result);
+        int[] actualResult = reverseArray.reverseArray(result);
 
         Assertions.assertArrayEquals(expectedResult,actualResult);
     }

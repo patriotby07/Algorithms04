@@ -14,7 +14,7 @@ public class OddEvenTest {
 //    @RepeatedTest(50) // прогонка теста 50 раз!
     @Test
     public void testOddEvenHappyPathOdd() {
-        long num = 5;
+        long num = -345;
         String expectedResult = "Odd";
 
 //        OddEven oe = new OddEven(); //  @BeforeEach позволяет убрать и не повторять эту строчку
@@ -25,8 +25,8 @@ public class OddEvenTest {
 
     @Order(2)
     @Test
-    public void testOddEvenHappyPathEven() {
-        long num = 88;
+    public void testOddEvenHappyPathZero() {
+        long num = 0;
         String expectedResult = "Even";
 
         String actualResult = oe.oddEven(num);
@@ -36,8 +36,8 @@ public class OddEvenTest {
 
     @Order(3)
     @Test
-    public void testOddEvenHappyPathNegativeNumber() {
-        long num = -856888;
+    public void testOddEvenHappyPathEven() {
+        long num = 222222;
         String expectedResult = "Even";
 
         String actualResult = oe.oddEven(num);
@@ -47,8 +47,8 @@ public class OddEvenTest {
 
     @Order(4)
     @Test
-    public void testOddEvenHappyPathZeroNumber() {
-        long num = 0;
+    public void testOddEvenHappyPathEvenNumber() {
+        long num = -88;
         String expectedResult = "Even";
 
         String actualResult = oe.oddEven(num);

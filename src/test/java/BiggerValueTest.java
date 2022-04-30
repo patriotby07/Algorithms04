@@ -2,8 +2,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class BiggerValueTest {
     BiggerValue biggerValue;
 
@@ -14,9 +12,9 @@ class BiggerValueTest {
 
     @Test
     void testBiggerValueHappyPathPositiveAB() {
-        int a = 350;
-        int b = 15;
-        int expectedResult = 350;
+        int a = 333;
+        int b = 9999;
+        int expectedResult = 9999;
 
         int actualResult = biggerValue.biggerValue(a, b);
 
