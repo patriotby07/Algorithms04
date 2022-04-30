@@ -5,9 +5,9 @@ public class ReverseArray {
      * {2, 7, 3, 10} → {10, 3, 7, 2}
      **/
 
-    public int[] reverseArray(int[] array) {
+    public static int[] reverseArray(int[] array) {
 
-        if (array == null) {
+        if (array == null ) {
             return new int[]{};
         }
 
