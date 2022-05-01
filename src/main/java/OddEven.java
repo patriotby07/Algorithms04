@@ -12,10 +12,13 @@ public class OddEven {
     public String oddEven(long num) {
 
         if (num < Integer.MIN_VALUE || num > Integer.MAX_VALUE) {
+
             return "Undefined";
         } else if (num % 2 == 0) {
+
             return "Even";
         } else
+
             return "Odd";
     }
 }

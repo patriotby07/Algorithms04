@@ -9,7 +9,7 @@ public class MinMaxAve {
 
     public Object[] minMaxAve(int[] array, int a, int b) {
 
-        if (array == null || array.length == 0 || a > b) {
+        if (array == null || array.length == 0 || a > b || a < 0) {
             return new Object[]{};
         }
         int min = array[a];
