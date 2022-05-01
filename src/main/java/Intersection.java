@@ -9,7 +9,7 @@ public class Intersection {
 
     public int[] intersection(int[] array1, int[] array2) { // полу-рабочий вариант
         if (array1.length == 0 || array2.length == 0) {
-            return null;
+            return new int[]{};
         }
         int length = 0;
         for (int i = 0; i < array1.length; i++) {
