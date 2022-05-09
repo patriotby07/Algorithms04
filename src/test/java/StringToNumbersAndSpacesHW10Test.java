@@ -17,7 +17,7 @@ class StringToNumbersAndSpacesHW10Test {
         String result = " {`@AaZz[] 238 We8 8+_§Ё©·ё№АаЯя(f  S..e";
         String expectedResult = "  238 8 8  ";
 
-        String actualResult = stringToNumbersAndSpaces.StringToNumbersAndSpaces(result);
+        String actualResult = stringToNumbersAndSpaces.stringToNumbersAndSpaces(result);
 
         Assertions.assertEquals(expectedResult, actualResult);
     }
@@ -27,7 +27,7 @@ class StringToNumbersAndSpacesHW10Test {
         String result = " ";
         String expectedResult = " ";
 
-        String actualResult = stringToNumbersAndSpaces.StringToNumbersAndSpaces(result);
+        String actualResult = stringToNumbersAndSpaces.stringToNumbersAndSpaces(result);
 
         Assertions.assertEquals(expectedResult, actualResult);
     }

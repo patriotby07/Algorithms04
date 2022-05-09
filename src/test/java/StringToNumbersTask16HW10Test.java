@@ -17,7 +17,7 @@ class StringToNumbersTask16HW10Test {
         String result = " {`@AaZz[] 238 We8 8+_§Ё©·ё№АаЯя(f  S..e";
         String expectedResult = "23888";
 
-        String actualResult = stringToNumbers.StringToNumbers(result);
+        String actualResult = stringToNumbers.stringToNumbers(result);
 
         Assertions.assertEquals(expectedResult, actualResult);
     }
@@ -27,7 +27,7 @@ class StringToNumbersTask16HW10Test {
         String result = "";
         String expectedResult = "";
 
-        String actualResult = stringToNumbers.StringToNumbers(result);
+        String actualResult = stringToNumbers.stringToNumbers(result);
 
         Assertions.assertEquals(expectedResult, actualResult);
     }
@@ -37,7 +37,7 @@ class StringToNumbersTask16HW10Test {
         String result = "/09:";
         String expectedResult = "09";
 
-        String actualResult = stringToNumbers.StringToNumbers(result);
+        String actualResult = stringToNumbers.stringToNumbers(result);
 
         Assertions.assertEquals(expectedResult, actualResult);
     }

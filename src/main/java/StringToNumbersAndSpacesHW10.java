@@ -1,6 +1,6 @@
 public class StringToNumbersAndSpacesHW10 {
 
-    public String StringToNumbersAndSpaces(String str) {
+    public String stringToNumbersAndSpaces(String str) {
         if (str.length() != 0) {
 
             String count = "";

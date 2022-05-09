@@ -1,6 +1,6 @@
 public class StringToNumbersTask16HW10 {
 
-    public String StringToNumbers(String str) {
+    public String stringToNumbers(String str) {
         if (str.length() != 0) {
 
             String count = "";
