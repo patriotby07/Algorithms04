@@ -1,0 +1,2 @@
+public class LongestCommonSubstringHW10 {
+}
