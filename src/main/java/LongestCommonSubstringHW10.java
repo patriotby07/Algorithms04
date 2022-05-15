@@ -11,7 +11,7 @@ public class LongestCommonSubstringHW10 {
         return false;
     }
 
-    public static String longestCommonSubstring(String str1, String str2, String str3) {
+    public String longestCommonSubstring(String str1, String str2, String str3) {
         if (isStringValid(str1) && isStringValid(str2) && isStringValid(str3)) {
             str1 = str1.trim().toLowerCase();
             str2 = str2.trim().toLowerCase();
